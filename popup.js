@@ -57,9 +57,9 @@ checkbox.addEventListener('change', function() {
     console.log("Check box changed: ", enabled)
     
 
-    // chrome.action.setBadgeText({
-    //     text: "ON",
-    // });
+    chrome.action.setBadgeText({
+        text: "ON",
+    });
 
     chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
         chrome.scripting.executeScript(
@@ -71,7 +71,7 @@ checkbox.addEventListener('change', function() {
             const error = chrome.runtime.lastError;
             if (error) "Error. Tab ID: " + tabs.id + ": " + JSON.stringify(error);
     
-            chrome.tabs.sendMessage(tabs[0].id);
+            // chrome.tabs.sendMessage(tabs[0].id);
             }
             );
         });
@@ -83,8 +83,23 @@ checkbox.addEventListener('change', function() {
     enabled = false;
     console.log("Check box changed: ", enabled)
 
-    // chrome.action.setBadgeText({
-    //     text: "OFF",
-    // });
+    chrome.action.setBadgeText({
+        text: "OFF",
+    });
+
+    chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
+        chrome.scripting.executeScript(
+            {
+            target: {tabId: tabs[0].id},
+            files: ["disablescript.js"]
+            },
+            () => {
+            const error = chrome.runtime.lastError;
+            if (error) "Error. Tab ID: " + tabs.id + ": " + JSON.stringify(error);
+    
+            // chrome.tabs.sendMessage(tabs[0].id);
+            }
+            );
+    });
   }
 });

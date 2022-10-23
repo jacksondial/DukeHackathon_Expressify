@@ -16,9 +16,9 @@ chrome.runtime.onInstalled.addListener(() => {
 
     chrome.storage.local.set({enabled: false});
 
-    // chrome.action.setBadgeText({
-    //     text: "OFF",
-    //   });
+    chrome.action.setBadgeText({
+        text: "OFF",
+      });
   });
   
 //   chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
