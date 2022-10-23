@@ -7,8 +7,17 @@
         //         }
         // });
 
+        var colors = {
+            "disgust": "#EA5AF1",
+            "neutral": "#FFCABD",
+            "sadness": "#FE7DFF",
+            "anger": "#FA5959",
+            "fear": "#039953",
+            "surprise": "#59CCFA",
+            "joy": "#F9E458",
+          };
         
-        
+
         changeSubtitlesStyle = () => {
             console.log("%cnetflix-subtitles-styler : observer is working... ", "color: red;");
             callback = () => {
@@ -25,7 +34,25 @@
 
                 const firstChild = firstChildContainer.firstChild;
                 if (firstChild) {
-                    firstChild.style.backgroundColor = "#F3333F";
+
+                    async function query(data) {
+                        const response = await fetch(
+                            "https://api-inference.huggingface.co/models/michellejieli/emotion_text_classifier",
+                            {
+                                headers: { Authorization: "Bearer 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" },
+                                method: "POST",
+                                body: JSON.stringify(data),
+                            }
+                        );
+                        const result = await response.json();
+                        return result;
+                    }
+
+                    query({"inputs": firstChild.textContent}).then((response) => {
+                        let color_res = colors[response[0][0]['label']];
+                        firstChild.style.backgroundColor = color_res;
+                    });
+
 
                     // console.log("Enabled: ", data.enabled)
                     console.log(firstChild.textContent)
