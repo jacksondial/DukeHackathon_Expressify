@@ -8,8 +8,6 @@ var colors = {
     "joy": "#F9E458",
 };
 
-const TOKEN = "XXXXXXXXXXXXXXXX"
-
 changeSubtitlesStyle = () => {
     // console.log("%cnetflix-subtitles-styler : observer is working... ", "color: red;");
     callback = () => {
@@ -28,7 +26,7 @@ changeSubtitlesStyle = () => {
                     const response = await fetch(
                         "https://api-inference.huggingface.co/models/michellejieli/emotion_text_classifier",
                         {
-                            headers: { Authorization: "Bearer " + TOKEN },
+                            headers: { Authorization: "Bearer XXXXXXX" },
                             method: "POST",
                             body: JSON.stringify(data),
                         }
@@ -38,7 +36,7 @@ changeSubtitlesStyle = () => {
                 }
 
                 query({"inputs": span.childNodes[0].textContent}).then((response) => {
-                    // console.log("response ", response)
+                    console.log("response ", response)
                     let color_res = colors[response[0][0]['label']];
                     // console.log(color_res)
                     span.childNodes[0].style.background = color_res;
@@ -61,7 +59,7 @@ changeSubtitlesStyle = () => {
                         const response = await fetch(
                             "https://api-inference.huggingface.co/models/michellejieli/emotion_text_classifier",
                             {
-                                headers: { Authorization: "Bearer " + TOKEN },
+                                headers: { Authorization: "Bearer XXXXXXX" },
                                 method: "POST",
                                 body: JSON.stringify(data),
                             }
