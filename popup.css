@@ -1,7 +1,7 @@
 body {
     --red: #e50914;
     --light-red: #fddddd;
-    --gray: #eeeeee;
+    --gray: linear-gradient(to right, #F7925E, #E6C7EB);;
     --black: #000000;
   
     font-family: "Open Sans", sans-serif !important;
@@ -17,7 +17,7 @@ body {
   }
   
   .logo {
-    background-color: var(--gray);
+    background-image: var(--gray);
     color: var(--red);
     font-weight: 600;
     font-size: 14px;
@@ -58,7 +58,7 @@ body {
   
   button {
     margin-top: 15px;
-    background-color: var(--gray);
+    background-image: var(--gray);
     color: var(--black);
     padding: 6px;
     border: 1px solid var(--black);
@@ -74,7 +74,7 @@ body {
   }
   
   .footer {
-    background-color: var(--gray);
+    background-image: var(--gray);
     margin-top: 8px;
     text-align: center;
   }
@@ -96,6 +96,7 @@ body {
     display: inline-block;
     width: 60px;
     height: 34px;
+    top: 50%;
   }
   
   /* Hide default HTML checkbox */
@@ -131,7 +132,8 @@ body {
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    /* background-color: #2196F3; */
+    background-image: linear-gradient(to right, #F7925E, #E6C7EB);
   }
   
   input:focus + .slider {
