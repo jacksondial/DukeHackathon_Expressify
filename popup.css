@@ -8,12 +8,13 @@ body {
     background-color: white;
     color: var(--black);
     margin: 0px !important;
-    width: 220px;
+    width: 240px;
   }
   
   .container {
     padding: 15px 10px 15px 10px;
     text-align: center;
+    margin-bottom: 20px;
   }
   
   .logo {
@@ -77,6 +78,7 @@ body {
     background-image: var(--gray);
     margin-top: 8px;
     text-align: center;
+    margin-bottom: 0px;
   }
   
   .footer a {
@@ -96,7 +98,7 @@ body {
     display: inline-block;
     width: 60px;
     height: 34px;
-    top: 50%;
+    top: -10%;
   }
   
   /* Hide default HTML checkbox */
@@ -153,5 +155,70 @@ body {
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  .togglebody {
+      padding-left:5%;
+      height: 40px;
+  }
+  
+  .togglename {
+      margin-top: 100px;
+      padding-top: 100px;
+  }
+
+  .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: -7px;
+  }
+
+  .shadow-circle{
+    /* border: 2px solid rgb(91, 91, 91); */
+    box-shadow: 1px 1px 1px 1px rgb(207, 207, 207);
+    box-shadow: -1px -1px -1px -1px rgb(207, 207, 207);
+    /* border-radius: 50%; */
+}
+
+  .joy {
+    background-color: #F9E458;
+  }
+
+  .surprise{
+    background-color: #59CCFA;
+  }
+
+  .anger {
+    background-color: #FA5959;
+  }
+
+  .fear {
+    background-color: #039953;
+  }
+
+  .sadness {
+    background-color: #5E7DFF;
+  }
+
+  .neutral {
+    background-color: #FFCABD;
+  }
+
+  .disgust{
+    background-color: #EA5AF1;
+  }
+
+  .legend {
+      margin:auto;
+      text-align: left;
+      padding-left: 35%;
+  }
+
+  .expressions {
+    margin:auto;
+    text-align: center;
   }
   

@@ -1,14 +1,15 @@
         
-        
-changeSubtitlesStyle = () => {
+console.log("Disabled")
+
+disableSubtitlesStyle = () => {
     console.log("%cnetflix-subtitles-styler : observer is working... ", "color: green;");
     callback = () => {
     // .player-timedText
     const subtitles = document.querySelector(".player-timedtext");
-    console.log("Subtitles: ", subtitles)
+    // console.log("Subtitles: ", subtitles)
     if (subtitles) {
         // subtitles.style.bottom = "100px";
-        console.log("Enabled so should change");
+        // console.log("Enabled so should change");
         // .player-timedtext > .player-timedtext-container [0]
         const firstChildContainer = subtitles.firstChild;
         if (firstChildContainer) {
@@ -24,14 +25,7 @@ changeSubtitlesStyle = () => {
         }
     }
     };
-
-    // const observer = new MutationObserver(callback);
-    // observer.observe(document.body, {
-    // subtree: true,
-    // attributes: false,
-    // childList: true
-    // });
 };
 
 
-changeSubtitlesStyle();
+disableSubtitlesStyle();

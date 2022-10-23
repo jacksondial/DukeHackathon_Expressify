@@ -1,9 +1,9 @@
 {
-    "name": "Empact",
+    "name": "Expressify",
     "version": "1.0",
-    "description": "Empact",
-    "author": "twistezo",
-    "homepage_url": "https://github.com/twistezo/netflix-subtitles-styler",
+    "description": "Expressify",
+    "author": "expressifiers",
+    "homepage_url": "https://github.com/expressify",
     "permissions": ["tabs", "scripting", "storage", "declarativeContent"],
     "host_permissions": ["https://*.netflix.com/", "https://*.youtube.com/*"],
     "background": {
