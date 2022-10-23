@@ -1,10 +1,11 @@
         
+        
 changeSubtitlesStyle = () => {
     console.log("%cnetflix-subtitles-styler : observer is working... ", "color: red;");
     callback = () => {
     // .player-timedText
     const subtitles = document.querySelector(".player-timedtext");
-    // console.log("Subtitles: ", subtitles)
+    console.log("Subtitles: ", subtitles)
     if (subtitles) {
         // subtitles.style.bottom = "100px";
         console.log("Enabled so should change");
@@ -15,14 +16,11 @@ changeSubtitlesStyle = () => {
 
         const firstChild = firstChildContainer.firstChild;
         if (firstChild) {
-            firstChild.style.backgroundColor = "#F3333F";
+            firstChild.style.backgroundColor = "transparent";
 
-
+            // console.log("Enabled: ", data.enabled)
             // console.log(firstChild.textContent)
-
-
         }
-
         }
     }
     };
@@ -34,5 +32,6 @@ changeSubtitlesStyle = () => {
     childList: true
     });
 };
+
 
 changeSubtitlesStyle();
