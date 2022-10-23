@@ -81,7 +81,7 @@ checkbox.addEventListener('change', function() {
     
 
     chrome.action.setBadgeText({
-        text: "ON",
+        text: "on",
     });
 
     chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
@@ -107,7 +107,7 @@ checkbox.addEventListener('change', function() {
     console.log("Check box changed: ", enabled)
 
     chrome.action.setBadgeText({
-        text: "OFF",
+        text: "off",
     });
 
     chrome.tabs.query({ active: true, currentWindow: true }, tabs => {

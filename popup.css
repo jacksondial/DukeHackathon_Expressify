@@ -19,7 +19,7 @@ body {
   
   .logo {
     background-image: var(--gray);
-    color: var(--red);
+    color: var(--blakc);
     font-weight: 600;
     font-size: 14px;
     word-spacing: 5px;
