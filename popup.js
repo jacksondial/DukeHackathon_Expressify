@@ -15,6 +15,21 @@ chrome.storage.local.get('enabled', data => {
     enabled = data.enabled;
     if(enabled){
         checkbox.checked = true;
+
+        chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
+            chrome.scripting.executeScript(
+                {
+                target: {tabId: tabs[0].id},
+                files: ["script.js"]
+                },
+                () => {
+                const error = chrome.runtime.lastError;
+                if (error) "Error. Tab ID: " + tabs.id + ": " + JSON.stringify(error);
+        
+                // chrome.tabs.sendMessage(tabs[0].id);
+                }
+                );
+            });
     }
 });
 
