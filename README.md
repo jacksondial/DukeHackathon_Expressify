@@ -22,7 +22,7 @@ Things included are:
 
 * `githubactions` 
 
-### Verify GPU works
+2. Verify GPU works
 
 The following examples test out the GPU
 
