@@ -17,4 +17,7 @@ It was difficult only selecting 7 emotions, as the human brain can process over 
 ## What's next for Expressify
 Adding computer vision techniques to classify facial expressions, adding customization with different color palettes to cover a wider range of people on the spectrum, and creating a platform for allowing users to practice specific emotions.
 
-1) [link](https://doi.org/10.3758/s13428-015-0598-8) 2) [link](https://embrace-autism.com/mapping-intensity-and-prevalence-of-emotions/) 3) [link](https://www.pnas.org/doi/10.1073/pnas.1702247114) 4) [link](https://rdcu.be/cX7pJ)
+1) [link](https://doi.org/10.3758/s13428-015-0598-8)
+2) [link](https://embrace-autism.com/mapping-intensity-and-prevalence-of-emotions/)
+3) [link](https://www.pnas.org/doi/10.1073/pnas.1702247114)
+4) [link](https://rdcu.be/cX7pJ)
