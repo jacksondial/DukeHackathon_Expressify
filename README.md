@@ -22,9 +22,7 @@ Things included are:
 
 * `githubactions` 
 
-2. Verify GPU works
-
-The following examples test out the GPU
+2. Verify and test GPU works
 
 * run pytorch training test: `python utils/quickstart_pytorch.py`
 * run pytorch CUDA test: `python utils/verify_cuda_pytorch.py`
