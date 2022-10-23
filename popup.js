@@ -18,7 +18,6 @@ chrome.storage.local.get('enabled', data => {
     }
 });
 
-
 // myButton.onclick = () => {
 //     enabled = !enabled;
 //     chrome.storage.local.set({enabled:enabled});
@@ -45,10 +44,19 @@ chrome.storage.local.get('enabled', data => {
 //   });
 // });
 
+chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
+    // how to fetch tab url using activeInfo.tabid
+       console.log("hi", tabs[0].url);
+       if (tabs[0].url.includes("youtube.com/watch")) {
+            chrome.storage.local.set({'currentTab': 'youtube'});
+        } else if (tabs[0].url.includes("netflix.com/watch")) {
+            console.log("netflix")
+            chrome.storage.local.set({'currentTab': 'netflix'});
+        }
+}); 
+
+
 checkbox.addEventListener('change', function() {
-
-    
-
   if (this.checked) {
     console.log("Checkbox is checked..");
 

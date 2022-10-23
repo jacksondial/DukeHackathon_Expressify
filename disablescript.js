@@ -1,7 +1,7 @@
         
         
 changeSubtitlesStyle = () => {
-    console.log("%cnetflix-subtitles-styler : observer is working... ", "color: red;");
+    console.log("%cnetflix-subtitles-styler : observer is working... ", "color: green;");
     callback = () => {
     // .player-timedText
     const subtitles = document.querySelector(".player-timedtext");
@@ -25,12 +25,12 @@ changeSubtitlesStyle = () => {
     }
     };
 
-    const observer = new MutationObserver(callback);
-    observer.observe(document.body, {
-    subtree: true,
-    attributes: false,
-    childList: true
-    });
+    // const observer = new MutationObserver(callback);
+    // observer.observe(document.body, {
+    // subtree: true,
+    // attributes: false,
+    // childList: true
+    // });
 };
 
 
