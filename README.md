@@ -25,12 +25,12 @@ Adding computer vision techniques to classify facial expressions, adding customi
 4) [link](https://rdcu.be/cX7pJ)
 
 ## To run the chrome extension locally:
-Clone this repository into local directory.
-Pin expressify extension in google chrome browser:
+Clone this repository into local directory.<br />
+###Pin expressify extension in google chrome browser:
 - Open google chrome browser and select button with three vertical dots on top right > Settings > Extensions
 - Select load unpacked button and select local repository
 - Select puzzle piece extension button on top right of browser to pin expressify extension on google chrome browser<br />
-Set up Hugging Face token:
+###Set up Hugging Face token:
 - Create/sign into account on https://huggingface.co/
 - Click on profile icon on top right of website > Settings > Access Tokens
 - Create and copy new token
