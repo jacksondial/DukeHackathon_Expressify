@@ -1,4 +1,6 @@
-# Duke Hackathon Emotion Expression Classifier for Autism 
+# HackDuke 2022 Emotion Expression Classifier for Autism 
+
+## Won first place in education track.
 
 ## Inspiration
 Individuals with autism often struggle with alexithymia, which is characterized by difficulty in understanding one's own emotional state and can lead to a lack of empathy while interacting with others in society. This introduces a need for developmental curricula to aid in strengthening associations between emotions and various stimuli.
@@ -6,7 +8,7 @@ Individuals with autism often struggle with alexithymia, which is characterized 
 Current curriculums are available in various forms, such as the LuxAI QTRobot, a doll-size robot targeted at educating autistic and special needs children. It was deemed of importance, however, to develop a more accessible resource, one that could potentially allow autistic children to learn the associations between emotions without being fully aware they are doing so. Therapies exist that aim to exploit human-native (1) connections between emotions and colors, where the color was shown at the same time as a phrase was read, or an image shown, for example.
 
 ## What it does
-Our chrome extension enables individuals to turn on live-captioning for Youtube videos, where the background color of the captions changes to be the color associated with the overall mood of the current phrase.
+Our chrome extension enables individuals to turn on live-captioning for Youtube videos, where the background color of the captions changes to be the color associated with the overall emotion of the current phrase.
 
 ## How we built it
 We used sentiment analysis to take in the transcriptions of a selected video and classify phrases as 1 of 7 sentiments. We manually associated each of the 7 sentiments with a color that is often naturally seen as associated with that sentiment (1) (2).
@@ -21,3 +23,16 @@ Adding computer vision techniques to classify facial expressions, adding customi
 2) [link](https://embrace-autism.com/mapping-intensity-and-prevalence-of-emotions/)
 3) [link](https://www.pnas.org/doi/10.1073/pnas.1702247114)
 4) [link](https://rdcu.be/cX7pJ)
+
+## To run the chrome extension locally:
+Pin expressify extension in google chrome browser:
+- Open google chrome browser and select button with three vertical dots on top right > Settings > Extensions
+- Select load unpacked button and select local repository
+- Select puzzle piece extension button on top right of browser to pin expressify extension on google chrome browser
+Set up Hugging Face token:
+- Create/sign into account on https://huggingface.co/
+- Click on profile icon on top right of website > Settings > Access Tokens
+- Create and copy new token
+- Open file `script.js` in repository and paste in tokens in place of XXXXX in two lines
+- Go to youtube or netflix video and turn on extension to enjoy subtitles with emotion recognition!
+- Note: If extension seems to stop working, head back to personal token page on Hugging Face and click Manage > Invalidate and Refresh, repaste tokens in `script.js`
