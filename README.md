@@ -19,10 +19,10 @@ It was difficult only selecting 7 emotions, as the human brain can process over 
 ## What's next for Expressify
 Adding computer vision techniques to classify facial expressions, adding customization with different color palettes to cover a wider range of people on the spectrum, and creating a platform for allowing users to practice specific emotions.
 
-1) [link](https://doi.org/10.3758/s13428-015-0598-8)
-2) [link](https://embrace-autism.com/mapping-intensity-and-prevalence-of-emotions/)
-3) [link](https://www.pnas.org/doi/10.1073/pnas.1702247114)
-4) [link](https://rdcu.be/cX7pJ)
+1) [Color associations to emotion and emotion-laden words: A collection of norms for stimulus construction and selection](https://doi.org/10.3758/s13428-015-0598-8)
+2) [Mapping intensity & prevalence of emotions in autism](https://embrace-autism.com/mapping-intensity-and-prevalence-of-emotions/)
+3) [Self-report captures 27 distinct categories of emotion bridged by continuous gradients](https://www.pnas.org/doi/10.1073/pnas.1702247114)
+4) [Mixed emotions: the contribution of alexithymia to the emotional symptoms of autism](https://rdcu.be/cX7pJ)
 
 ## To run the chrome extension locally:
 Clone this repository into local directory.<br />
